@@ -1,0 +1,257 @@
+---
+title: |
+       | STAT 539
+       | Generalized Linear Models
+subtitle: Fall 2026 Syllabus
+output:
+  html_document:
+    theme: flatly
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+    css: styles.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning=FALSE, message=FALSE)
+
+library(RColorBrewer)
+library(tidyverse)
+
+pal <- brewer.pal(4, 'Pastel1')
+```
+
+
+# Course calendar
+
+See our [course calendar](calendar.html) for a tentative outline of material covered each week and due dates. 
+
+---
+
+# Time and location
+
+MWF 9:00-9:50am  
+Wilson Hall 1-139
+
+---
+
+# Instructor contact information  {-}
+
+[**Dr. Stacey Hancock**](http://www.math.montana.edu/shancock/){target="_blank"}  
+email: stacey.hancock@montana.edu  
+Office: Wilson 2-195  
+Phone: (406) 993-5350  
+
+_Office hours_: 
+
+* TBD
+* Also available by appointment.
+
+---
+
+# Prerequisites
+STAT 422 (Mathematical Statistics) and STAT 411/511 (Methods for Data Analysis I) are required for this course. 
+
+ <a href="#top">Back to top</a>
+ 
+---
+ 
+# Course materials
+
+### Required textbook
+
+Agresti, A. (2015). _Foundations of Linear and Generalized Linear Models_.
+Wiley-Interscience.
+
+We will cover most of Chapters 1-9, including supplementary material. Chapters 2 and 3 will be a review of normal linear models. Chapters 10 and 11 will be covered as time allows.
+
+### Additional reference texts
+
+The following are helpful reference texts; they are not required for the course.
+
+- Agresti, A. (2002). _Categorical Data Analysis_. Wiley-Interscience.
+- Casella, G. and Berger, R. (2001). _Statistical Inference_, 2nd ed. Duxbury Press.
+- Fitzmaurice, G. M., Laird, N. M., and Ware, J. H. (2011). _Applied Longitudinal Analysis_, 2nd ed. Wiley.
+- Kutner, M., Nachtsheim, C., Neter, J., and Li, W. (2005). _Applied Linear Statistical Models_. McGraw Hill Irwin.
+- McCullagh, P. and Nelder, J. (1989) _Generalized Linear Models_, 2nd ed. Chapman & Hall/CRC.
+
+### Statistical computing
+
+We will be using the statistical software [R](https://www.r-project.org/) through the IDE [RStudio](https://posit.co/downloads/) for simulations, data visualization, and statistical analyses. Students have four options for accessing this free software:
+
+1. Download to your own laptop. (Note R and RStudio will not run on iPad, notebooks, or Chromebooks. If you have one of these devices, see the cloud-based option below.)
+
+    * Download and install [R](https://cloud.r-project.org/).
+    * Download and install [RStudio Desktop](https://posit.co/downloads/).
+
+2. Use RStudio through the [Posit Cloud](https://posit.cloud/). This resource allows you to use RStudio through a web browser. It is free for use, but it does limit you to a certain number of project hours per month.
+
+3. Use RStudio through an MSU [virtual machine](https://studentlabs.montana.edu/remotelabs/howto.html).
+
+4. Use RStudio in an MSU on-campus computer lab. 
+
+At times, we may work on an analysis in R together in class. Bring your laptop (with R
+installed) to each class period. If you do not own a laptop, share with another student in
+class. While not using R, [laptops should be put away during class](http://www.npr.org/2016/04/17/474525392/attention-students-put-your-laptops-away). Any computer output handed in with homework must include the code used to produce it and be concisely summarized with answers clearly identified. (No one enjoys wading through pages of computer output looking for answers.)
+
+### Learning management
+
+- [**Canvas**](https://www.montana.edu/ecat/): Announcements, gradebook, discussion forums.
+  + *Important*: Make sure you are receiving email notifications for any Canvas activity. In Canvas, click Account on the top left, then Notifications. Check that Canvas is using an email address that you regularly check (if not, change your Canvas Contact email by clicking on Account, then Settings). Check the boxes to get notifications for Course Content, Files, Announcement, Grading, and Discussions. 
+  + If you have a question about the course materials, computing, or logistics, please post your question to your **Canvas discussion board** instead of emailing your instructor. This ensures all students can benefit from the responses. Other students are encouraged to respond. 
+
+ <a href="#top">Back to top</a>
+ 
+---
+
+# Course description and learning outcomes
+
+This course will provide an introduction to the principles of generalized regression models, with an emphasis on categorical data models. Categorical data occurs extensively in both observational and experimental studies, as well as in industrial applications. The course will focus on both theory and application of methods for data analysis. Problems will be motivated from a scientific perspective. Topics covered include logistic regression, log-linear models, analysis of deviance, extrabinomial variation, quasi-likelihood, and models for correlated responses.
+
+Upon successful completion of the course, students will be able to:
+
+- Describe the general structure of a GLM and similarities and differences with linear
+models
+- Estimate and interpret a logistic regression model
+- Estimate and interpret a Poisson regression model
+- Know of issues and some strategies for dealing with overdispersion in some GLMs
+- Estimate and interpret a GLM for continuous responses that are not normally distributed
+
+ <a href="#top">Back to top</a>
+ 
+ ---
+ 
+# Course expectations
+
+In this course, you are expected to have professional behavior. You are expected to attend all class meetings on time, be curious, ask questions, seek opportunities to learn, and be open and responsive to constructive feedback. In addition:
+
+* Be an active participant---statistics is not a spectator sport!
+* Be committed, take your work seriously.
+* Engage with the in-class activities and homework sets.
+* Help others---if you understand the material being discussed, practice your mentoring skills. This does not mean sharing answers, but instead helping others understand the concepts.
+* Complete assigned readings and read your textbook.
+
+You are also expected to exhibit a professional demeanor (language, attitude) toward others. Disagreement during discussions is welcome and often productive in developing a deeper understanding of the concepts being discussed. However, disagreement in a discussion does not warrant yelling or disrespectful language or behavior. Unprofessional behavior that impedes on other students’ opportunity to learn will not be tolerated, and appropriate actions will be taken to prevent future occurrences. Anyone causing minor disturbances (e.g., cell phone usage or ringing) will be expected to bring treats for everyone else to the next class meeting. 
+
+_Please silence cell phones and put them away during class._ Having your cell phone out is
+distracting to the instructor, other students, and yourself, and detracts from the classroom
+learning environment.
+
+<a href="#top">Back to top</a>
+ 
+---
+
+# Course assessment
+
+Grades will be posted in Canvas as they become available. We will have weekly (approximately)
+homework assignments including problems from the textbook, problems using R, and longer data
+analysis problems. The course consists of two in-class midterm exams and a semester-long data
+analysis project. 
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, out.width="75%"}
+grades <- tribble(
+  ~category,  ~percent,
+  "Homework", 20,
+  "Midterm Exam 1", 30,
+  "Midterm Exam 2", 30,
+  "Data Analysis Project", 20
+)
+grades$category <- fct_relevel(grades$category, "Homework", "Midterm Exam 1", "Midterm Exam 2", "Data Analysis Project")
+grades$location <- rep(1, 4)
+grades %>% ggplot(aes(x=location, y=percent)) +
+  geom_col(aes(fill=category), col='black') + 
+  guides(fill=FALSE) + 
+  geom_text(aes(x=rep(1, 4), 
+                label=c("Homework (20%)",
+                        "Midterm Exam 1 (30%)",
+                        "Midterm Exam 2 (30%)",
+                        "Data Analysis Project (20%)"), 
+                y=c(90,65,35, 10),
+                size=18)) + 
+  labs(x='', y='Cumulative percent') + 
+  theme(axis.text.x = element_blank(), 
+        text = element_text(size = 15),
+        legend.position = "none") +
+  scale_fill_manual(values=pal)
+```
+
+In general, late homework will not be accepted. If you have an emergency or extenuating
+circumstances that keep you from completing the homework on time, speak to Prof. Hancock as soon as possible. In general, I am very flexible as long as students are respectful and honest. The lowest homework grade will be dropped.
+
+Midterm exam questions will be similar to the homework with a few short answer and multiple
+choice questions; any required R output will be provided. You may use two hand-written 8.5"x11" sheets of notes for each exam. The first midterm exam will cover material up to that date; the second midterm exam will cover material after the first midterm exam up to the date of the second exam.
+
+The data analysis project will be comprised of a statistical analysis of a data set of your choice (subject to certain constraints), a written report, and a 10 minute presentation (given during our final exam time). Detailed project instructions and deadlines will be provided.
+
+Letter grades generally follow the typical scale:
+
+93-100 = A  
+90-92 = A-  
+88-89 = B+  
+83-87 = B  
+80-82 = B-  
+etc.
+
+These cutoffs may be adjusted down (never up!) at the end of the semester, depending on the grade distribution in the course. Thus, a 93% will guarantee an A, a 90% will guarantee an A-, etc.
+
+<a href="#top">Back to top</a>
+ 
+---
+ 
+
+# Diversity and inclusivity statements
+
+**Respect for Diversity**: It is our intent that students from all diverse backgrounds and perspectives be well-served by this course, that students' learning needs be addressed both in and out of class, and that the diversity that students bring to this class be viewed as a resource, strength and benefit. It is our intent to present materials and activities that are respectful of diversity: gender identity, sexual orientation, disability, age, socioeconomic status, ethnicity, race, religion, culture, perspective, and other background characteristics. Your suggestions about how to improve the value of diversity in this course are encouraged and appreciated. Please let us know ways to improve the effectiveness of the course for you personally or for other students or student groups.
+
+In addition, in scheduling exams, we have attempted to avoid conflicts with major religious holidays. If, however, we have inadvertently scheduled an exam or major deadline that creates a conflict with your religious observances, please let us know as soon as possible so that we can make other arrangements. 
+
+**Support for Inclusivity**: We support an inclusive learning environment where diversity and individual differences are understood, respected, appreciated, and recognized as a source of strength. We expect that students, faculty, administrators and staff at MSU will respect differences and demonstrate diligence in understanding how other peoples' perspectives, behaviors, and worldviews may be different from their own.
+
+<a href="#top">Back to top</a>
+ 
+---
+
+# Policy on the use of generative AI {#ai}
+
+This class will strive to create an environment that fosters learning, critical thinking, and effective communication. To achieve these goals, I have decided to prohibit the use of ChatGPT or similar tools during this course, with the exception of assistance in writing computer code.
+
+While ChatGPT and other language models can be powerful and useful tools in certain contexts, I believe that relying on them for this course undermines the learning objectives. I want you to develop your skills in independent thinking, problem-solving, and engagement with the subject matter. By restricting the use of AI language models to help with coding only, you will utilize your knowledge, creativity, and critical analysis to complete your assignments and actively participate in class discussions.
+
+I understand that technology plays an increasingly prominent role in various aspects of our lives, and I acknowledge its potential benefits. However, in the context of this course, I believe that relying on personal effort and intellectual exploration will enhance your learning experience and contribute to your long-term development as a knowledgeable and well-rounded individual.
+
+It is important to note that this requirement applies to all aspects of the course, including assignments, exams, and any form of communication related to the course content. Any use of AI language models, including ChatGPT, during these activities, outside of appropriate use to aid in computer coding, will be considered a violation of the student code of conduct.
+
+Should you have any questions or concerns regarding this course expectation, please feel free to discuss them with me. I am here to support and guide you throughout this educational journey.
+
+_The wording above was adapted from MSU's guidance on [establishing expectations, syllabus language, and policies for generative AI use](https://www.montana.edu/facultyexcellence/teaching-advising/courseclassdesign/genai/expectations.html)._
+
+
+
+# Policy on collaboration and academic misconduct {#policy}
+
+> "Integrity without knowledge is weak and useless, 
+> but knowledge without integrity is dangerous and dreadful."
+>
+>`r tufte::quote_footer('--- Samuel Johnson (1709-1784)')`
+
+At a minimum, any act of academic dishonesty, which includes but is not limited to plagiarism, cheating, multiple submissions, or facilitating others’ misconduct, will result in a score of zero on the assignment/quiz/exam in question and notification of department and university officials. Further action may be taken as warranted. If you have any questions about the limits of collaboration or about using and citing sources, you are expected to ask for clarification.
+
+### Homework
+_After attempting to complete homework problems on your own_, you are permitted to collaborate on homework in a constructive manner for all involved---each individual in the collaboration needs to ensure they understand and could explain the process of solving each problem. While I encourage you to talk through problems with fellow students, the work you turn in must be your own and must be written in your own words (unless the assignment specifically states otherwise). 
+
+**Each homework will require a "citations" page where you cite all sources (including web forums such as Stack Overflow, Google searches, and AI (for coding questions only)) and individuals used to complete that homework assignment.** Paraphrasing or quoting another’s work without citing the source is a form of academic dishonesty. Even inadvertent or unintentional misuse or appropriation of another's work (such as relying heavily on source material that is not expressly acknowledged) is considered plagiarism.  Homework assignments that do not cite sources or individuals, or assignments where answers are copied directly from another student, will be considered and treated as plagiarism, and will receive a zero grade. If you have any questions about the limits of collaboration or about using and citing sources, you are expected to ask for clarification.  
+
+
+### MSU policy
+
+Students in an academic setting are responsible for approaching all assignments with rigor, integrity, and in compliance with the University Code of Student Conduct. This responsibility includes:
+
+1. consulting and analyzing sources that are relevant to the topic of inquiry;
+2. clearly acknowledging when they draw from the ideas or the phrasing of those sources in their own writing;
+3. learning and using appropriate citation conventions within the field in which they are studying; and
+4. asking their instructor for guidance when they are uncertain of how to acknowledge the contributions of others in their thinking and writing.
+
+[More information about Student Conduct from the Dean of Students](https://www.montana.edu/deanofstudents/our-programs/student-conduct/index.html)
+
+<a href="#top">Back to top</a>
+

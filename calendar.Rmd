@@ -1,0 +1,229 @@
+---
+title: "STAT 539 Fall 2026 Course Calendar"
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
+  pdf_document:
+    toc: false
+    toc_depth: '2'
+---
+
+
+#### [Back to STAT 539 syllabus...](index.html)
+
+
+# Week 1: Aug 26--28
+
+**Required Reading**
+
+* Ch 1: Sec 1.1 p. 1-6
+* Ch 1: Sec 1.2-1.3 p. 6-13
+
+#### _Wednesday_
+
+* Introductions to the course and each other  
+* Motivation for generalized linear models
+
+#### _Friday_ 
+
+* Introduction to generalized linear models in the context of the data analysis process
+
+---
+
+# Week 2: Aug 31--Sep 4
+
+#### _Monday_
+
+
+#### _Wednesday_
+
+
+#### _Friday_
+
+
+---
+
+# Week 3: Sep 7--11
+
+#### _Monday_
+
+* _No classes: Labor Day_
+
+#### _Wednesday_
+
+
+#### _Friday_
+
+
+---
+
+# Week 4: Sep 14--18
+
+#### _Monday_
+
+
+#### _Wednesday_
+
+
+#### _Friday_
+
+
+---
+
+# Week 5: Sep 21--25
+
+#### _Monday_
+
+
+#### _Wednesday_
+
+
+#### _Friday_
+
+
+---
+
+# Week 6: Sep 28--Oct 2
+
+#### _Monday_
+
+
+#### _Wednesday_
+
+
+#### _Friday_
+
+
+---
+
+# Week 7: Oct 5--9
+
+#### _Monday_
+
+
+#### _Wednesday_
+
+
+#### _Friday_
+
+
+
+---
+
+# Week 8: Oct 12--16
+
+#### _Monday_
+
+
+#### _Wednesday_
+
+
+#### _Friday_
+
+
+
+---
+
+# Week 9: Oct 19--23
+
+#### _Monday_
+
+
+#### _Wednesday_
+
+
+#### _Friday_
+
+
+---
+
+# Week 10: Oct 26--30
+
+#### _Monday_
+
+
+#### _Wednesday_
+
+
+#### _Friday_
+
+
+
+---
+
+# Week 11: Nov 2--6
+
+#### _Monday_
+
+
+#### _Wednesday_
+
+
+#### _Friday_
+
+
+---
+
+# Week 12: Nov 9--13
+
+#### _Monday_
+
+
+#### _Wednesday_
+
+* _Veteran's Day: No Class_
+
+#### _Friday_
+
+
+---
+
+# Week 13: Nov 16--20
+
+#### _Monday_
+
+
+#### _Wednesday_
+
+
+#### _Friday_
+
+
+---
+
+### _Nov 23--27: Fall break_
+
+---
+
+# Week 14: Nov 30--Dec 4
+
+#### _Monday_
+
+
+#### _Wednesday_
+
+
+#### _Friday_
+
+
+
+---
+
+# Week 15: Dec 7--11
+
+#### _Monday_
+
+
+#### _Wednesday_
+
+
+#### _Friday_
+
+
+
+---
+
+# Finals week
+

@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>index.knit</title>
+
+<script src="site_libs/header-attrs-2.31/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">STAT 539</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="calendar.html">Calendar</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="mailto:&lt;stacey.hancock@montana.edu&gt;">
+    <span class="fa fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://github.com/staceyhancock/stat539">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore"><div class="line-block">STAT 539<br />
+Generalized Linear Models</div></h1>
+<h3 class="subtitle">Fall 2026 Syllabus</h3>
+
+</div>
+
+
+<div id="course-calendar" class="section level1">
+<h1>Course calendar</h1>
+<p>See our <a href="calendar.html">course calendar</a> for a tentative
+outline of material covered each week and due dates.</p>
+<hr />
+</div>
+<div id="time-and-location" class="section level1">
+<h1>Time and location</h1>
+<p>MWF 9:00-9:50am<br />
+Wilson Hall 1-139</p>
+<hr />
+</div>
+<div id="instructor-contact-information"
+class="section level1 unnumbered">
+<h1 class="unnumbered">Instructor contact information</h1>
+<p><a href="http://www.math.montana.edu/shancock/"
+target="_blank"><strong>Dr. Stacey Hancock</strong></a><br />
+email: <a href="mailto:stacey.hancock@montana.edu"
+class="email">stacey.hancock@montana.edu</a><br />
+Office: Wilson 2-195<br />
+Phone: (406) 993-5350</p>
+<p><em>Office hours</em>:</p>
+<ul>
+<li>TBD</li>
+<li>Also available by appointment.</li>
+</ul>
+<hr />
+</div>
+<div id="prerequisites" class="section level1">
+<h1>Prerequisites</h1>
+<p>STAT 422 (Mathematical Statistics) and STAT 411/511 (Methods for Data
+Analysis I) are required for this course.</p>
+<p><a href="#top">Back to top</a></p>
+<hr />
+</div>
+<div id="course-materials" class="section level1">
+<h1>Course materials</h1>
+<div id="required-textbook" class="section level3">
+<h3>Required textbook</h3>
+<p>Agresti, A. (2015). <em>Foundations of Linear and Generalized Linear
+Models</em>. Wiley-Interscience.</p>
+<p>We will cover most of Chapters 1-9, including supplementary material.
+Chapters 2 and 3 will be a review of normal linear models. Chapters 10
+and 11 will be covered as time allows.</p>
+</div>
+<div id="additional-reference-texts" class="section level3">
+<h3>Additional reference texts</h3>
+<p>The following are helpful reference texts; they are not required for
+the course.</p>
+<ul>
+<li>Agresti, A. (2002). <em>Categorical Data Analysis</em>.
+Wiley-Interscience.</li>
+<li>Casella, G. and Berger, R. (2001). <em>Statistical Inference</em>,
+2nd ed. Duxbury Press.</li>
+<li>Fitzmaurice, G. M., Laird, N. M., and Ware, J. H. (2011).
+<em>Applied Longitudinal Analysis</em>, 2nd ed. Wiley.</li>
+<li>Kutner, M., Nachtsheim, C., Neter, J., and Li, W. (2005).
+<em>Applied Linear Statistical Models</em>. McGraw Hill Irwin.</li>
+<li>McCullagh, P. and Nelder, J. (1989) <em>Generalized Linear
+Models</em>, 2nd ed. Chapman &amp; Hall/CRC.</li>
+</ul>
+</div>
+<div id="statistical-computing" class="section level3">
+<h3>Statistical computing</h3>
+<p>We will be using the statistical software <a
+href="https://www.r-project.org/">R</a> through the IDE <a
+href="https://posit.co/downloads/">RStudio</a> for simulations, data
+visualization, and statistical analyses. Students have four options for
+accessing this free software:</p>
+<ol style="list-style-type: decimal">
+<li><p>Download to your own laptop. (Note R and RStudio will not run on
+iPad, notebooks, or Chromebooks. If you have one of these devices, see
+the cloud-based option below.)</p>
+<ul>
+<li>Download and install <a
+href="https://cloud.r-project.org/">R</a>.</li>
+<li>Download and install <a href="https://posit.co/downloads/">RStudio
+Desktop</a>.</li>
+</ul></li>
+<li><p>Use RStudio through the <a href="https://posit.cloud/">Posit
+Cloud</a>. This resource allows you to use RStudio through a web
+browser. It is free for use, but it does limit you to a certain number
+of project hours per month.</p></li>
+<li><p>Use RStudio through an MSU <a
+href="https://studentlabs.montana.edu/remotelabs/howto.html">virtual
+machine</a>.</p></li>
+<li><p>Use RStudio in an MSU on-campus computer lab.</p></li>
+</ol>
+<p>At times, we may work on an analysis in R together in class. Bring
+your laptop (with R installed) to each class period. If you do not own a
+laptop, share with another student in class. While not using R, <a
+href="http://www.npr.org/2016/04/17/474525392/attention-students-put-your-laptops-away">laptops
+should be put away during class</a>. Any computer output handed in with
+homework must include the code used to produce it and be concisely
+summarized with answers clearly identified. (No one enjoys wading
+through pages of computer output looking for answers.)</p>
+</div>
+<div id="learning-management" class="section level3">
+<h3>Learning management</h3>
+<ul>
+<li><a href="https://www.montana.edu/ecat/"><strong>Canvas</strong></a>:
+Announcements, gradebook, discussion forums.
+<ul>
+<li><em>Important</em>: Make sure you are receiving email notifications
+for any Canvas activity. In Canvas, click Account on the top left, then
+Notifications. Check that Canvas is using an email address that you
+regularly check (if not, change your Canvas Contact email by clicking on
+Account, then Settings). Check the boxes to get notifications for Course
+Content, Files, Announcement, Grading, and Discussions.</li>
+<li>If you have a question about the course materials, computing, or
+logistics, please post your question to your <strong>Canvas discussion
+board</strong> instead of emailing your instructor. This ensures all
+students can benefit from the responses. Other students are encouraged
+to respond.</li>
+</ul></li>
+</ul>
+<p><a href="#top">Back to top</a></p>
+<hr />
+</div>
+</div>
+<div id="course-description-and-learning-outcomes"
+class="section level1">
+<h1>Course description and learning outcomes</h1>
+<p>This course will provide an introduction to the principles of
+generalized regression models, with an emphasis on categorical data
+models. Categorical data occurs extensively in both observational and
+experimental studies, as well as in industrial applications. The course
+will focus on both theory and application of methods for data analysis.
+Problems will be motivated from a scientific perspective. Topics covered
+include logistic regression, log-linear models, analysis of deviance,
+extrabinomial variation, quasi-likelihood, and models for correlated
+responses.</p>
+<p>Upon successful completion of the course, students will be able
+to:</p>
+<ul>
+<li>Describe the general structure of a GLM and similarities and
+differences with linear models</li>
+<li>Estimate and interpret a logistic regression model</li>
+<li>Estimate and interpret a Poisson regression model</li>
+<li>Know of issues and some strategies for dealing with overdispersion
+in some GLMs</li>
+<li>Estimate and interpret a GLM for continuous responses that are not
+normally distributed</li>
+</ul>
+<p><a href="#top">Back to top</a></p>
+<hr />
+</div>
+<div id="course-expectations" class="section level1">
+<h1>Course expectations</h1>
+<p>In this course, you are expected to have professional behavior. You
+are expected to attend all class meetings on time, be curious, ask
+questions, seek opportunities to learn, and be open and responsive to
+constructive feedback. In addition:</p>
+<ul>
+<li>Be an active participant—statistics is not a spectator sport!</li>
+<li>Be committed, take your work seriously.</li>
+<li>Engage with the in-class activities and homework sets.</li>
+<li>Help others—if you understand the material being discussed, practice
+your mentoring skills. This does not mean sharing answers, but instead
+helping others understand the concepts.</li>
+<li>Complete assigned readings and read your textbook.</li>
+</ul>
+<p>You are also expected to exhibit a professional demeanor (language,
+attitude) toward others. Disagreement during discussions is welcome and
+often productive in developing a deeper understanding of the concepts
+being discussed. However, disagreement in a discussion does not warrant
+yelling or disrespectful language or behavior. Unprofessional behavior
+that impedes on other students’ opportunity to learn will not be
+tolerated, and appropriate actions will be taken to prevent future
+occurrences. Anyone causing minor disturbances (e.g., cell phone usage
+or ringing) will be expected to bring treats for everyone else to the
+next class meeting.</p>
+<p><em>Please silence cell phones and put them away during class.</em>
+Having your cell phone out is distracting to the instructor, other
+students, and yourself, and detracts from the classroom learning
+environment.</p>
+<p><a href="#top">Back to top</a></p>
+<hr />
+</div>
+<div id="course-assessment" class="section level1">
+<h1>Course assessment</h1>
+<p>Grades will be posted in Canvas as they become available. We will
+have weekly (approximately) homework assignments including problems from
+the textbook, problems using R, and longer data analysis problems. The
+course consists of two in-class midterm exams and a semester-long data
+analysis project.</p>
+<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" alt="" width="75%" /></p>
+<p>In general, late homework will not be accepted. If you have an
+emergency or extenuating circumstances that keep you from completing the
+homework on time, speak to Prof. Hancock as soon as possible. In
+general, I am very flexible as long as students are respectful and
+honest. The lowest homework grade will be dropped.</p>
+<p>Midterm exam questions will be similar to the homework with a few
+short answer and multiple choice questions; any required R output will
+be provided. You may use two hand-written 8.5”x11” sheets of notes for
+each exam. The first midterm exam will cover material up to that date;
+the second midterm exam will cover material after the first midterm exam
+up to the date of the second exam.</p>
+<p>The data analysis project will be comprised of a statistical analysis
+of a data set of your choice (subject to certain constraints), a written
+report, and a 10 minute presentation (given during our final exam time).
+Detailed project instructions and deadlines will be provided.</p>
+<p>Letter grades generally follow the typical scale:</p>
+<p>93-100 = A<br />
+90-92 = A-<br />
+88-89 = B+<br />
+83-87 = B<br />
+80-82 = B-<br />
+etc.</p>
+<p>These cutoffs may be adjusted down (never up!) at the end of the
+semester, depending on the grade distribution in the course. Thus, a 93%
+will guarantee an A, a 90% will guarantee an A-, etc.</p>
+<p><a href="#top">Back to top</a></p>
+<hr />
+</div>
+<div id="diversity-and-inclusivity-statements" class="section level1">
+<h1>Diversity and inclusivity statements</h1>
+<p><strong>Respect for Diversity</strong>: It is our intent that
+students from all diverse backgrounds and perspectives be well-served by
+this course, that students’ learning needs be addressed both in and out
+of class, and that the diversity that students bring to this class be
+viewed as a resource, strength and benefit. It is our intent to present
+materials and activities that are respectful of diversity: gender
+identity, sexual orientation, disability, age, socioeconomic status,
+ethnicity, race, religion, culture, perspective, and other background
+characteristics. Your suggestions about how to improve the value of
+diversity in this course are encouraged and appreciated. Please let us
+know ways to improve the effectiveness of the course for you personally
+or for other students or student groups.</p>
+<p>In addition, in scheduling exams, we have attempted to avoid
+conflicts with major religious holidays. If, however, we have
+inadvertently scheduled an exam or major deadline that creates a
+conflict with your religious observances, please let us know as soon as
+possible so that we can make other arrangements.</p>
+<p><strong>Support for Inclusivity</strong>: We support an inclusive
+learning environment where diversity and individual differences are
+understood, respected, appreciated, and recognized as a source of
+strength. We expect that students, faculty, administrators and staff at
+MSU will respect differences and demonstrate diligence in understanding
+how other peoples’ perspectives, behaviors, and worldviews may be
+different from their own.</p>
+<p><a href="#top">Back to top</a></p>
+<hr />
+</div>
+<div id="ai" class="section level1">
+<h1>Policy on the use of generative AI</h1>
+<p>This class will strive to create an environment that fosters
+learning, critical thinking, and effective communication. To achieve
+these goals, I have decided to prohibit the use of ChatGPT or similar
+tools during this course, with the exception of assistance in writing
+computer code.</p>
+<p>While ChatGPT and other language models can be powerful and useful
+tools in certain contexts, I believe that relying on them for this
+course undermines the learning objectives. I want you to develop your
+skills in independent thinking, problem-solving, and engagement with the
+subject matter. By restricting the use of AI language models to help
+with coding only, you will utilize your knowledge, creativity, and
+critical analysis to complete your assignments and actively participate
+in class discussions.</p>
+<p>I understand that technology plays an increasingly prominent role in
+various aspects of our lives, and I acknowledge its potential benefits.
+However, in the context of this course, I believe that relying on
+personal effort and intellectual exploration will enhance your learning
+experience and contribute to your long-term development as a
+knowledgeable and well-rounded individual.</p>
+<p>It is important to note that this requirement applies to all aspects
+of the course, including assignments, exams, and any form of
+communication related to the course content. Any use of AI language
+models, including ChatGPT, during these activities, outside of
+appropriate use to aid in computer coding, will be considered a
+violation of the student code of conduct.</p>
+<p>Should you have any questions or concerns regarding this course
+expectation, please feel free to discuss them with me. I am here to
+support and guide you throughout this educational journey.</p>
+<p><em>The wording above was adapted from MSU’s guidance on <a
+href="https://www.montana.edu/facultyexcellence/teaching-advising/courseclassdesign/genai/expectations.html">establishing
+expectations, syllabus language, and policies for generative AI
+use</a>.</em></p>
+</div>
+<div id="policy" class="section level1">
+<h1>Policy on collaboration and academic misconduct</h1>
+<blockquote>
+<p>“Integrity without knowledge is weak and useless, but knowledge
+without integrity is dangerous and dreadful.”</p>
+<footer class="blockquote-footer" style="text-align: right;">
+Samuel Johnson (1709-1784)
+</footer>
+</blockquote>
+<p>At a minimum, any act of academic dishonesty, which includes but is
+not limited to plagiarism, cheating, multiple submissions, or
+facilitating others’ misconduct, will result in a score of zero on the
+assignment/quiz/exam in question and notification of department and
+university officials. Further action may be taken as warranted. If you
+have any questions about the limits of collaboration or about using and
+citing sources, you are expected to ask for clarification.</p>
+<div id="homework" class="section level3">
+<h3>Homework</h3>
+<p><em>After attempting to complete homework problems on your own</em>,
+you are permitted to collaborate on homework in a constructive manner
+for all involved—each individual in the collaboration needs to ensure
+they understand and could explain the process of solving each problem.
+While I encourage you to talk through problems with fellow students, the
+work you turn in must be your own and must be written in your own words
+(unless the assignment specifically states otherwise).</p>
+<p><strong>Each homework will require a “citations” page where you cite
+all sources (including web forums such as Stack Overflow, Google
+searches, and AI (for coding questions only)) and individuals used to
+complete that homework assignment.</strong> Paraphrasing or quoting
+another’s work without citing the source is a form of academic
+dishonesty. Even inadvertent or unintentional misuse or appropriation of
+another’s work (such as relying heavily on source material that is not
+expressly acknowledged) is considered plagiarism. Homework assignments
+that do not cite sources or individuals, or assignments where answers
+are copied directly from another student, will be considered and treated
+as plagiarism, and will receive a zero grade. If you have any questions
+about the limits of collaboration or about using and citing sources, you
+are expected to ask for clarification.</p>
+</div>
+<div id="msu-policy" class="section level3">
+<h3>MSU policy</h3>
+<p>Students in an academic setting are responsible for approaching all
+assignments with rigor, integrity, and in compliance with the University
+Code of Student Conduct. This responsibility includes:</p>
+<ol style="list-style-type: decimal">
+<li>consulting and analyzing sources that are relevant to the topic of
+inquiry;</li>
+<li>clearly acknowledging when they draw from the ideas or the phrasing
+of those sources in their own writing;</li>
+<li>learning and using appropriate citation conventions within the field
+in which they are studying; and</li>
+<li>asking their instructor for guidance when they are uncertain of how
+to acknowledge the contributions of others in their thinking and
+writing.</li>
+</ol>
+<p><a
+href="https://www.montana.edu/deanofstudents/our-programs/student-conduct/index.html">More
+information about Student Conduct from the Dean of Students</a></p>
+<p><a href="#top">Back to top</a></p>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>STAT 539 Fall 2026 Course Calendar</title>
+
+<script src="site_libs/header-attrs-2.31/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">STAT 539</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="calendar.html">Calendar</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="mailto:&lt;stacey.hancock@montana.edu&gt;">
+    <span class="fa fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://github.com/staceyhancock/stat539">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">STAT 539 Fall 2026 Course Calendar</h1>
+
+</div>
+
+
+<div id="back-to-stat-539-syllabus" class="section level4">
+<h4><a href="index.html">Back to STAT 539 syllabus…</a></h4>
+</div>
+<div id="week-1-aug-2628" class="section level1">
+<h1>Week 1: Aug 26–28</h1>
+<p><strong>Required Reading</strong></p>
+<ul>
+<li>Ch 1: Sec 1.1 p. 1-6</li>
+<li>Ch 1: Sec 1.2-1.3 p. 6-13</li>
+</ul>
+<div id="wednesday" class="section level4">
+<h4><em>Wednesday</em></h4>
+<ul>
+<li>Introductions to the course and each other<br />
+</li>
+<li>Motivation for generalized linear models</li>
+</ul>
+</div>
+<div id="friday" class="section level4">
+<h4><em>Friday</em></h4>
+<ul>
+<li>Introduction to generalized linear models in the context of the data
+analysis process</li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="week-2-aug-31sep-4" class="section level1">
+<h1>Week 2: Aug 31–Sep 4</h1>
+<div id="monday" class="section level4">
+<h4><em>Monday</em></h4>
+</div>
+<div id="wednesday-1" class="section level4">
+<h4><em>Wednesday</em></h4>
+</div>
+<div id="friday-1" class="section level4">
+<h4><em>Friday</em></h4>
+<hr />
+</div>
+</div>
+<div id="week-3-sep-711" class="section level1">
+<h1>Week 3: Sep 7–11</h1>
+<div id="monday-1" class="section level4">
+<h4><em>Monday</em></h4>
+<ul>
+<li><em>No classes: Labor Day</em></li>
+</ul>
+</div>
+<div id="wednesday-2" class="section level4">
+<h4><em>Wednesday</em></h4>
+</div>
+<div id="friday-2" class="section level4">
+<h4><em>Friday</em></h4>
+<hr />
+</div>
+</div>
+<div id="week-4-sep-1418" class="section level1">
+<h1>Week 4: Sep 14–18</h1>
+<div id="monday-2" class="section level4">
+<h4><em>Monday</em></h4>
+</div>
+<div id="wednesday-3" class="section level4">
+<h4><em>Wednesday</em></h4>
+</div>
+<div id="friday-3" class="section level4">
+<h4><em>Friday</em></h4>
+<hr />
+</div>
+</div>
+<div id="week-5-sep-2125" class="section level1">
+<h1>Week 5: Sep 21–25</h1>
+<div id="monday-3" class="section level4">
+<h4><em>Monday</em></h4>
+</div>
+<div id="wednesday-4" class="section level4">
+<h4><em>Wednesday</em></h4>
+</div>
+<div id="friday-4" class="section level4">
+<h4><em>Friday</em></h4>
+<hr />
+</div>
+</div>
+<div id="week-6-sep-28oct-2" class="section level1">
+<h1>Week 6: Sep 28–Oct 2</h1>
+<div id="monday-4" class="section level4">
+<h4><em>Monday</em></h4>
+</div>
+<div id="wednesday-5" class="section level4">
+<h4><em>Wednesday</em></h4>
+</div>
+<div id="friday-5" class="section level4">
+<h4><em>Friday</em></h4>
+<hr />
+</div>
+</div>
+<div id="week-7-oct-59" class="section level1">
+<h1>Week 7: Oct 5–9</h1>
+<div id="monday-5" class="section level4">
+<h4><em>Monday</em></h4>
+</div>
+<div id="wednesday-6" class="section level4">
+<h4><em>Wednesday</em></h4>
+</div>
+<div id="friday-6" class="section level4">
+<h4><em>Friday</em></h4>
+<hr />
+</div>
+</div>
+<div id="week-8-oct-1216" class="section level1">
+<h1>Week 8: Oct 12–16</h1>
+<div id="monday-6" class="section level4">
+<h4><em>Monday</em></h4>
+</div>
+<div id="wednesday-7" class="section level4">
+<h4><em>Wednesday</em></h4>
+</div>
+<div id="friday-7" class="section level4">
+<h4><em>Friday</em></h4>
+<hr />
+</div>
+</div>
+<div id="week-9-oct-1923" class="section level1">
+<h1>Week 9: Oct 19–23</h1>
+<div id="monday-7" class="section level4">
+<h4><em>Monday</em></h4>
+</div>
+<div id="wednesday-8" class="section level4">
+<h4><em>Wednesday</em></h4>
+</div>
+<div id="friday-8" class="section level4">
+<h4><em>Friday</em></h4>
+<hr />
+</div>
+</div>
+<div id="week-10-oct-2630" class="section level1">
+<h1>Week 10: Oct 26–30</h1>
+<div id="monday-8" class="section level4">
+<h4><em>Monday</em></h4>
+</div>
+<div id="wednesday-9" class="section level4">
+<h4><em>Wednesday</em></h4>
+</div>
+<div id="friday-9" class="section level4">
+<h4><em>Friday</em></h4>
+<hr />
+</div>
+</div>
+<div id="week-11-nov-26" class="section level1">
+<h1>Week 11: Nov 2–6</h1>
+<div id="monday-9" class="section level4">
+<h4><em>Monday</em></h4>
+</div>
+<div id="wednesday-10" class="section level4">
+<h4><em>Wednesday</em></h4>
+</div>
+<div id="friday-10" class="section level4">
+<h4><em>Friday</em></h4>
+<hr />
+</div>
+</div>
+<div id="week-12-nov-913" class="section level1">
+<h1>Week 12: Nov 9–13</h1>
+<div id="monday-10" class="section level4">
+<h4><em>Monday</em></h4>
+</div>
+<div id="wednesday-11" class="section level4">
+<h4><em>Wednesday</em></h4>
+<ul>
+<li><em>Veteran’s Day: No Class</em></li>
+</ul>
+</div>
+<div id="friday-11" class="section level4">
+<h4><em>Friday</em></h4>
+<hr />
+</div>
+</div>
+<div id="week-13-nov-1620" class="section level1">
+<h1>Week 13: Nov 16–20</h1>
+<div id="monday-11" class="section level4">
+<h4><em>Monday</em></h4>
+</div>
+<div id="wednesday-12" class="section level4">
+<h4><em>Wednesday</em></h4>
+</div>
+<div id="friday-12" class="section level4">
+<h4><em>Friday</em></h4>
+<hr />
+</div>
+<div id="nov-2327-fall-break" class="section level3">
+<h3><em>Nov 23–27: Fall break</em></h3>
+<hr />
+</div>
+</div>
+<div id="week-14-nov-30dec-4" class="section level1">
+<h1>Week 14: Nov 30–Dec 4</h1>
+<div id="monday-12" class="section level4">
+<h4><em>Monday</em></h4>
+</div>
+<div id="wednesday-13" class="section level4">
+<h4><em>Wednesday</em></h4>
+</div>
+<div id="friday-13" class="section level4">
+<h4><em>Friday</em></h4>
+<hr />
+</div>
+</div>
+<div id="week-15-dec-711" class="section level1">
+<h1>Week 15: Dec 7–11</h1>
+<div id="monday-13" class="section level4">
+<h4><em>Monday</em></h4>
+</div>
+<div id="wednesday-14" class="section level4">
+<h4><em>Wednesday</em></h4>
+</div>
+<div id="friday-14" class="section level4">
+<h4><em>Friday</em></h4>
+<hr />
+</div>
+</div>
+<div id="finals-week" class="section level1">
+<h1>Finals week</h1>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
