@@ -65,6 +65,11 @@ Wiley-Interscience.
 
 We will cover most of Chapters 1-9, including supplementary material. Chapters 2 and 3 will be a review of normal linear models. Chapters 10 and 11 will be covered as time allows.
 
+Links related to the textbook:
+
+* [Recommended linear algebra lectures by G. Strang](http://ocw.mit.edu/courses/mathematics) (see, in particular, topics such as vector spaces, column space and null space, independence and a basis, inverses, orthogonality, projections and least squares, eigenvalues and eigenvectors, and symmetric and idempotent matrices)
+* [Textbook data sets](https://alanagresti.com/glm/data/)
+
 ### Additional reference texts
 
 The following are helpful reference texts; they are not required for the course.
