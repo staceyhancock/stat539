@@ -18,8 +18,7 @@ output:
 
 **Required Reading**
 
-* Ch 1: Sec 1.1 p. 1-6
-* Ch 1: Sec 1.2-1.3 p. 6-13
+* Ch 1: Sec 1.1 p. 1-6, Sec 1.2-1.3 p. 6-13
 
 #### _Wednesday_
 
@@ -34,18 +33,31 @@ output:
 
 # Week 2: Aug 31--Sep 4
 
+**Required Reading**
+
+* Ch 2: Sec 2.1 p. 26-33, Sec 2.2.1-2.2.3 p. 33-37, Sec 2.3.1-2.3.2 p. 41-45, Sec 2.4.1 p. 49-50, Sec 2.7 p. 67-70
+* Ch 3: Sec 3.3.1 p. 95-96
+
+
 #### _Monday_
 
+* Interpreting regression coefficients, linear models theory and ordinary least squares
 
 #### _Wednesday_
 
+* Linear models theory and OLS (cont)
 
 #### _Friday_
 
+* Linear models theory and OLS (cont), weighted least squares
 
 ---
 
 # Week 3: Sep 7--11
+
+**Required Reading**
+
+* Ch 4: Sec 4.1 p. 120-123
 
 #### _Monday_
 
@@ -53,47 +65,72 @@ output:
 
 #### _Wednesday_
 
+* Adjustment variables, smoking and lung capacity case study on slides
 
 #### _Friday_
 
+* GLM components, exponential dispersion family and properties
 
 ---
 
 # Week 4: Sep 14--18
 
+**Required Reading**
+
+* Ch 4: Sec 4.2.1-4.2.4 p. 123-127, Sec 4.5 p. 138-143
+* Ch 4: Sec 4.3 p. 128-132, Sec 4.4 p. 132-138
+
 #### _Monday_
 
+* Likelihood and asymptotics for GLMs, algorithms for fitting GLM models (Newton-Raphson, Fisher scores, IWLS)
 
 #### _Wednesday_
 
+* Newton-Raphson and Fisher scoring (cont)
 
 #### _Friday_
 
+* Wald and score tests, deviance, residuals for GLMs
 
 ---
 
 # Week 5: Sep 21--25
 
+**Required Reading**
+
+* Ch 5 Sec 5.1 p. 165-168, Sec 5.6 p. 183-186
+
 #### _Monday_
 
+* Models for binary data
 
 #### _Wednesday_
 
+* Logistic regression interpretations, odds ratio versus relative risk in case-control studies
 
 #### _Friday_
 
+* Logistic regression (cont) (Dr. Mark Greenwood)
 
 ---
 
 # Week 6: Sep 28--Oct 2
 
+**Required Reading**
+
+* Ch 5 Sec 5.2.4 p. 170-172, Sec 5.4 p. 176-179, Sec 5.5 p. 179-183
+
 #### _Monday_
 
+* Summarizing predictive power, Hosmer-Lemeshow goodness of fit for binary data, diagnostics for binary data, model fitting in logistic regression and complete separation (Dr. Mark Greenwood)
 
 #### _Wednesday_
 
+* Catch up and review
 
 #### _Friday_
+
+* Attend the Montana ASA Chapter Meeting in Wilson Hall 001 instead of class. Register and view the schedule here: <https://shinjini8.github.io/mt-asa-meeting-2026/>
 
 
 ---
@@ -102,6 +139,7 @@ output:
 
 #### _Monday_
 
+* _Midterm Exam 1: Chapters 1-4_
 
 #### _Wednesday_
 
