@@ -265,3 +265,5 @@ output:
 
 # Finals week
 
+* Monday, December 14, 8:30-9:50am: Final project presentations
+
