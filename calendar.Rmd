@@ -137,56 +137,86 @@ output:
 
 # Week 7: Oct 5--9
 
+**Required Reading**
+
+* Ch 6 Sec 6.1.1-6.1.2, Sec 6.2.1, 6.2.5, Sec 6.3
+
 #### _Monday_
 
 * _Midterm Exam 1: Chapters 1-5_
 
 #### _Wednesday_
 
+* GLMs for multinomial response
 
 #### _Friday_
 
+* GLMs for multinomial response (cont)
 
 
 ---
 
 # Week 8: Oct 12--16
 
+**Required Reading**
+
+* Ch 7 Sec 7.2.1-7.2.6
+
 #### _Monday_
+
+* GLMs for multinomial response (cont)
 
 
 #### _Wednesday_
 
+* Loglinear models for contingency tables
 
 #### _Friday_
 
-
+* Loglinear models for contingency tables (cont)
 
 ---
 
 # Week 9: Oct 19--23
 
+**Required Reading**
+
+* Ch 7 Sec 7.1, 7.3, 7.4, 7.5
+* Ch 8 Sec 8.1, 8.3
+
 #### _Monday_
 
+* GLMs for Poisson response and quasi-likelihood methods
 
 #### _Wednesday_
 
+* GLMs for Poisson response and quasi-likelihood methods (cont)
 
 #### _Friday_
 
+* GLMs for Poisson response and quasi-likelihood methods (cont)
+* **Data Analysis Project Deadline**: Data set and research questions due in Canvas by 5pm
 
 ---
 
 # Week 10: Oct 26--30
 
+**Required Reading**
+
+* Ch 9
+
 #### _Monday_
 
+* Correlated data
 
 #### _Wednesday_
 
+* Correlated data (cont)
 
 #### _Friday_
 
+* Correlated data (cont)
+* **Data Analysis Project Deadline**: Data analysis proposal due in Canvas by 5pm
 
 
 ---
@@ -195,18 +225,23 @@ output:
 
 #### _Monday_
 
+* Correlated data (cont)
 
 #### _Wednesday_
 
+* Correlated data (cont)
 
 #### _Friday_
 
+* Correlated data (cont)
 
 ---
 
 # Week 12: Nov 9--13
 
 #### _Monday_
+
+* Catch up and review
 
 
 #### _Wednesday_
@@ -215,18 +250,29 @@ output:
 
 #### _Friday_
 
+* _Midterm Exam 1: Chapters 6-9_
 
 ---
 
 # Week 13: Nov 16--20
 
+**Required Reading**
+
+* Ch 10
+
+
 #### _Monday_
 
+* Bayesian methods
 
 #### _Wednesday_
 
+* Bayesian methods
 
 #### _Friday_
+
+* Bayesian methods
+* **Data Analysis Project Deadline**: Draft report due in Canvas by 5pm
 
 
 ---
@@ -239,12 +285,16 @@ output:
 
 #### _Monday_
 
+* Special topics
 
 #### _Wednesday_
 
+* Special topics
 
 #### _Friday_
 
+* Special topics
+* **Data Analysis Project Deadline**: Peer assessment due in Canvas by 5pm
 
 
 ---
@@ -253,12 +303,17 @@ output:
 
 #### _Monday_
 
+* Special topics
+
 
 #### _Wednesday_
 
+* Special topics
 
 #### _Friday_
 
+* Special topics
+* **Data Analysis Project Deadline**: Final report due in Canvas by 5pm
 
 
 ---
