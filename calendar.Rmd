@@ -169,11 +169,11 @@ output:
 
 #### _Wednesday_
 
-* Loglinear models for contingency tables
+* GLMs for multinomial response (cont)
 
 #### _Friday_
 
-* Loglinear models for contingency tables (cont)
+* Loglinear models for contingency tables
 
 ---
 
@@ -186,11 +186,11 @@ output:
 
 #### _Monday_
 
-* GLMs for Poisson response and quasi-likelihood methods
+* Loglinear models for contingency tables (cont)
 
 #### _Wednesday_
 
-* GLMs for Poisson response and quasi-likelihood methods (cont)
+* GLMs for Poisson response and quasi-likelihood methods
 
 #### _Friday_
 
@@ -233,7 +233,7 @@ output:
 
 #### _Friday_
 
-* Correlated data (cont)
+* Catch up and review
 
 ---
 
@@ -241,8 +241,7 @@ output:
 
 #### _Monday_
 
-* Catch up and review
-
+* _No Class_
 
 #### _Wednesday_
 
