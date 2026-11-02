@@ -201,6 +201,25 @@ output:
 
 # Week 10: Oct 26--30
 
+
+#### _Monday_
+
+* GLMs for Poisson response and quasi-likelihood methods (cont)
+
+#### _Wednesday_
+
+* GLMs for Poisson response and quasi-likelihood methods (cont)
+
+#### _Friday_
+
+* GLMs for Poisson response and quasi-likelihood methods (cont)
+
+
+
+---
+
+# Week 11: Nov 2--6
+
 **Required Reading**
 
 * Ch 9
@@ -208,32 +227,15 @@ output:
 #### _Monday_
 
 * Correlated data
-
-#### _Wednesday_
-
-* Correlated data (cont)
-
-#### _Friday_
-
-* Correlated data (cont)
 * **Data Analysis Project Deadline**: Data analysis proposal due in Canvas by 5pm
 
-
----
-
-# Week 11: Nov 2--6
-
-#### _Monday_
-
-* Correlated data (cont)
-
 #### _Wednesday_
 
 * Correlated data (cont)
 
 #### _Friday_
 
-* Catch up and review
+* Correlated data (cont)
 
 ---
 
@@ -249,28 +251,25 @@ output:
 
 #### _Friday_
 
-* _Midterm Exam 1: Chapters 6-9_
+* _Midterm Exam 1: Chapters 6-8_
 
 ---
 
 # Week 13: Nov 16--20
 
-**Required Reading**
-
-* Ch 10
-
 
 #### _Monday_
 
-* Bayesian methods
+* Correlated data (cont)
+
 
 #### _Wednesday_
 
-* Bayesian methods
+* Correlated data (cont)
 
 #### _Friday_
 
-* Bayesian methods
+* Correlated data (cont)
 * **Data Analysis Project Deadline**: Draft report due in Canvas by 5pm
 
 
@@ -282,17 +281,21 @@ output:
 
 # Week 14: Nov 30--Dec 4
 
+**Required Reading**
+
+* Ch 10
+
 #### _Monday_
 
-* Special topics
+* Bayesian methods
 
 #### _Wednesday_
 
-* Special topics
+* Bayesian methods
 
 #### _Friday_
 
-* Special topics
+* Bayesian methods
 * **Data Analysis Project Deadline**: Peer assessment due in Canvas by 5pm
 
 
