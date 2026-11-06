@@ -251,7 +251,8 @@ output:
 
 #### _Friday_
 
-* _Midterm Exam 1: Chapters 6-8_
+* Exam review
+* Correlated data (cont)
 
 ---
 
@@ -260,7 +261,7 @@ output:
 
 #### _Monday_
 
-* Correlated data (cont)
+* _Midterm Exam 2: Chapters 6-8_
 
 
 #### _Wednesday_
